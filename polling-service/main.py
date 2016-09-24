@@ -55,7 +55,11 @@ def getTemp():
         resp = r.json()
         return resp['result']
 
-client = InfluxDBClient('localhost', 8086, 'root', 'root', 'example')
+
+
+
+# influx added to /etc/hosts by docker
+client = InfluxDBClient('influx', 8086, 'root', 'root', 'example')
 
 setup()
 
