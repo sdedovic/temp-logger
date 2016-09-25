@@ -19,7 +19,7 @@ def createTempReading(temp):
             },
             "time": timestampToDatetime(time.time()),
             "fields" : {
-                "value": long(temp)
+                "value": temp
             }
         }
     ]
